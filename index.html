@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -65,14 +67,14 @@
             </div>
           </div>
           <div class="hero-image">
-            <img src="./images/hero-product.png" alt="ICF System" />
+            <img src="./images/hero image.png" alt="ICF System" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Performance Section -->
-    <section class="performance-section">
+    <section class="performance-section"id="about">
       <div class="container">
         <div class="performance-content">
           <h2 class="section-title-large">
@@ -84,13 +86,23 @@
             requirements by integrating structure, insulation, and durability
             into a single, efficient solution.
           </p>
-          <button class="btn-secondary">Explore Applications</button>
-          <div class="rating">
-            <div class="stars">
-              <span>⭐⭐⭐⭐⭐</span>
-              <span class="rating-text">4.3/5</span>
+          <button class="btn-dark">Explore Applications</button>
+          <div class="rating-container">
+            <div class="avatar-group">
+              <img src="./images/avatar1.jpg" alt="User" />
+              <img src="./images/avatar2.jpg" alt="User" />
+              <img src="./images/avatar3.jpg" alt="User" />
+              <img src="./images/avatar4.jpg" alt="User" />
             </div>
-            <p class="rating-description">Rated by 300+ Professionals</p>
+            <div class="rating-info">
+              <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <div class="rating-text-group">
+                <span class="rating-score">4.3/5</span>
+                <span class="rating-desc">Rated by 300+ Professionals</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -99,25 +111,25 @@
     <!-- Featured Projects -->
     <section class="featured-projects" id="projects">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-badge">🔶 Featured Projects</span>
-            <h2 class="section-title">
+        <div class="projects-header">
+          <div class="header-left">
+            <div class="title-wrapper">
+              <span class="orange-slash"></span>
+              <h2 class="section-title-large">Featured Projects</h2>
+            </div>
+            <p class="section-subtitle-text">
               G-Walls systems have been implemented across a wide range of
               developments, demonstrating proven performance in diverse
               environments and building types.
-            </h2>
+            </p>
           </div>
-          <button class="btn-text">View all Projects →</button>
+          <button class="btn-dark-outline">View all Projects</button>
         </div>
 
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
               <img src="./images/project1.jpg" alt="Place Vendome" />
-              <div class="project-overlay">
-                <button class="btn-primary">View Property</button>
-              </div>
             </div>
             <div class="project-info">
               <h3>Place Vendome</h3>
@@ -127,18 +139,19 @@
                 (EIFS) decorative applications.
               </p>
               <div class="project-meta">
-                <span class="location">📍 Doha, Qatar</span>
-                <span class="tag">EIFS</span>
+                <div class="meta-row">
+                  <span class="location-icon">📍</span>
+                  <span class="location">Doha, Qatar</span>
+                </div>
+                <span class="tag-dark">EIFS</span>
               </div>
+              <button class="btn-card-action">View Property</button>
             </div>
           </div>
 
           <div class="project-card">
             <div class="project-image">
               <img src="./images/project2.jpg" alt="Hofuf Complex" />
-              <div class="project-overlay">
-                <button class="btn-primary">View Property</button>
-              </div>
             </div>
             <div class="project-info">
               <h3>Hofuf Complex</h3>
@@ -147,18 +160,19 @@
                 2500 sqm) constructed using G-Walls ICF systems.
               </p>
               <div class="project-meta">
-                <span class="location">📍 Al Hassa, Saudi Arabia</span>
-                <span class="tag">ICF Systems</span>
+                <div class="meta-row">
+                  <span class="location-icon">📍</span>
+                  <span class="location">Al Hassa, Saudi Arabia</span>
+                </div>
+                <span class="tag-dark">ICF Systems</span>
               </div>
+              <button class="btn-card-action">View Property</button>
             </div>
           </div>
 
           <div class="project-card">
             <div class="project-image">
               <img src="./images/project3.jpg" alt="JAFZA Warehouse" />
-              <div class="project-overlay">
-                <button class="btn-primary">View Property</button>
-              </div>
             </div>
             <div class="project-info">
               <h3>JAFZA Warehouse</h3>
@@ -168,17 +182,23 @@
                 performance across 140,000 sqm.
               </p>
               <div class="project-meta">
-                <span class="location">📍 Dubai, UAE</span>
-                <span class="tag">iForm ICF systems</span>
+                <div class="meta-row">
+                  <span class="location-icon">📍</span>
+                  <span class="location">Dubai, UAE</span>
+                </div>
+                <span class="tag-dark">iForm ICF systems</span>
               </div>
+              <button class="btn-card-action">View Property</button>
             </div>
           </div>
         </div>
 
-        <div class="carousel-indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
+        <div class="projects-pagination">
+          <span class="page-counter">01/03</span>
+          <div class="pagination-arrows">
+            <button class="arrow-btn" aria-label="Previous">←</button>
+            <button class="arrow-btn" aria-label="Next">→</button>
+          </div>
         </div>
       </div>
     </section>
@@ -265,77 +285,95 @@
     <!-- Testimonials Section -->
     <section class="testimonials-section">
       <div class="container">
-        <div class="section-header-center">
-          <span class="section-badge">🔥 What Our Clients Say</span>
-          <h2 class="section-title">
+        <div class="testimonials-header-center">
+          <div class="title-with-icon">
+            <h2 class="auth-title">What Our Clients Say</h2>
+            <span class="orange-diamond"></span>
+          </div>
+          <p class="section-subtitle-center">
             At Pinnacle, we're not just building structures - we're building
             relationships. Here's what some of our satisfied clients have to say
             about their experience with us.
-          </h2>
-          <div class="rating">
-            <div class="stars">
-              <span>⭐⭐⭐⭐⭐</span>
-              <span class="rating-text">4.3/5</span>
+          </p>
+          
+          <div class="rating-container-center">
+            <div class="avatar-group">
+              <img src="./images/avatar1.jpg" alt="User" />
+              <img src="./images/avatar2.jpg" alt="User" />
+              <img src="./images/avatar3.jpg" alt="User" />
+              <img src="./images/avatar4.jpg" alt="User" />
             </div>
-            <p class="rating-description">Rated by 300+ Professionals</p>
+             <div class="rating-info">
+              <div class="stars">
+                <span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <div class="rating-text-group">
+                <span class="rating-score">4.3/5</span>
+                <span class="rating-desc">Rated by 300+ Professionals</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="testimonials-grid">
           <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="./images/avatar1.jpg" alt="Client" class="avatar" />
-              <div class="testimonial-author">
-                <h4>John Smith</h4>
-                <p>— Contractor</p>
-              </div>
-            </div>
-            <p class="testimonial-text">
-              "G-Walls provided a technically sound system supported by
-              responsive engineering assistance throughout the project."
-            </p>
+             <div class="testimonial-image-col">
+                 <img src="./images/avatar1.jpg" alt="John Smith" />
+             </div>
+             <div class="testimonial-content-col">
+                <p class="testimonial-quote">
+                  "G-Walls provided a technically sound system supported by
+                  responsive engineering assistance throughout the project."
+                </p>
+                <div class="testimonial-author-meta">
+                   — Project Consultant
+                </div>
+             </div>
           </div>
 
           <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="./images/avatar2.jpg" alt="Client" class="avatar" />
-              <div class="testimonial-author">
-                <h4>Michael Chen</h4>
-                <p>— Project Consultant</p>
-              </div>
+            <div class="testimonial-image-col">
+                <img src="./images/avatar2.jpg" alt="Michael Chen" />
             </div>
-            <p class="testimonial-text">
-              "The ICF solution delivered measurable improvements in thermal
-              performance and construction efficiency."
-            </p>
+            <div class="testimonial-content-col">
+               <p class="testimonial-quote">
+                 "The ICF solution delivered measurable improvements in thermal
+                 performance and construction efficiency."
+               </p>
+               <div class="testimonial-author-meta">
+                  — Contractor
+               </div>
+            </div>
           </div>
 
           <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="./images/avatar3.jpg" alt="Client" class="avatar" />
-              <div class="testimonial-author">
-                <h4>Ahmed Al-Rashid</h4>
-                <p>— Developer</p>
-              </div>
+            <div class="testimonial-image-col">
+                <img src="./images/avatar3.jpg" alt="Ahmed Al-Rashid" />
             </div>
-            <p class="testimonial-text">
-              "Reliable product quality and clear documentation made integration
-              into our project straightforward."
-            </p>
+            <div class="testimonial-content-col">
+               <p class="testimonial-quote">
+                 "Reliable product quality and clear documentation made integration
+                 into our project straightforward."
+               </p>
+               <div class="testimonial-author-meta">
+                  — Developer
+               </div>
+            </div>
           </div>
 
           <div class="testimonial-card">
-            <div class="testimonial-header">
-              <img src="./images/avatar4.jpg" alt="Client" class="avatar" />
-              <div class="testimonial-author">
-                <h4>Sarah K. Johnson</h4>
-                <p>— Project Manager, Johnson Co</p>
-              </div>
+            <div class="testimonial-image-col">
+                <img src="./images/avatar4.jpg" alt="Sarah K. Johnson" />
             </div>
-            <p class="testimonial-text">
-              "Pinnacle's ability to balance budget, schedule, and quality is
-              impressive. They're a true partner in the construction process."
-            </p>
+            <div class="testimonial-content-col">
+               <p class="testimonial-quote">
+                 "Pinnacle's ability to balance budget, schedule, and quality is
+                 impressive. They're a true partner in the construction process."
+               </p>
+               <div class="testimonial-author-meta">
+                  - Sarah K. Johnson, Project Manager, Johnson Co
+               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -344,17 +382,20 @@
     <!-- Blog Section -->
     <section class="blog-section" id="news">
       <div class="container">
-        <div class="section-header">
-          <div>
-            <span class="section-badge">🔶 Industry Insights & Updates</span>
-            <h2 class="section-title">
-              We've built a reputation for delivering exceptional results and
-              exceeding our clients' expectations. From luxurious residential
-              homes to state-of-the-art commercial properties, our team of
-              experts is dedicated to bringing your vision to life.
-            </h2>
+        <div class="projects-header">
+          <div class="header-left">
+            <div class="title-wrapper">
+              <span class="orange-flower"></span>
+              <h2 class="section-title-large">Industry Insights & Updates</h2>
+            </div>
+            <p class="section-subtitle-text">
+               We've built a reputation for delivering exceptional results and
+               exceeding our clients' expectations. From luxurious residential
+               homes to state-of-the-art commercial properties, our team of
+               experts is dedicated to bringing your vision to life.
+            </p>
           </div>
-          <button class="btn-text">View all blog post →</button>
+          <button class="btn-dark-outline">View all blog post</button>
         </div>
 
         <div class="blog-grid">
@@ -363,12 +404,12 @@
               <img src="./images/blog1.jpg" alt="Blog Post" />
             </div>
             <div class="blog-content">
-              <span class="blog-category">Home Improvement</span>
-              <h3>The Role of ICF in Energy-Efficient Construction</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-              <div class="blog-meta">
-                <span class="blog-date">May 10, 2022</span>
-                <a href="#" class="blog-link">Read More... →</a>
+              <span class="tag-dark">Home Improvement</span>
+              <h3 class="blog-title">The Role of ICF in Energy-Efficient Construction</h3>
+              
+              <div class="blog-footer">
+                <span class="blog-date">📅 May 10, 2022</span>
+                <a href="#" class="blog-link-underlined">Read More...</a>
               </div>
             </div>
           </div>
@@ -378,21 +419,23 @@
               <img src="./images/blog2.jpg" alt="Blog Post" />
             </div>
             <div class="blog-content">
-              <span class="blog-category">Planning</span>
-              <h3>Designing for Extreme Climates</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-              <div class="blog-meta">
-                <span class="blog-date">Jan 15, 2023</span>
-                <a href="#" class="blog-link">Read More... →</a>
+              <span class="tag-dark">Planning</span>
+              <h3 class="blog-title">Designing for Extreme Climates</h3>
+              
+              <div class="blog-footer">
+                <span class="blog-date">📅 Jan 15, 2023</span>
+                <a href="#" class="blog-link-underlined">Read More...</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="carousel-indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
+        <div class="projects-pagination">
+          <span class="page-counter">01/03</span>
+          <div class="pagination-arrows">
+            <button class="arrow-btn" aria-label="Previous">←</button>
+            <button class="arrow-btn" aria-label="Next">→</button>
+          </div>
         </div>
       </div>
     </section>
@@ -400,60 +443,62 @@
     <!-- FAQ Section -->
     <section class="faq-section">
       <div class="container">
-        <div class="section-header-center">
-          <span class="section-badge">🔶 Frequently Asked Questions</span>
+      <div class="container">
+        <div class="projects-header">
+          <div class="header-left">
+            <div class="title-wrapper">
+              <span class="orange-abstract"></span>
+              <h2 class="section-title-large">Frequently Asked Questions</h2>
+            </div>
+          </div>
         </div>
 
         <div class="faq-grid">
-          <div class="faq-item">
-            <h3 class="faq-question">What is an insulated concrete form (ICF) system?</h3>
-            <div class="faq-answer">
-              <p>
+          <div class="faq-card">
+             <h3 class="faq-card-title">What is an insulated concrete form (ICF) system?</h3>
+             <p class="faq-card-text">
                 An ICF system is a permanent formwork solution combining reinforced concrete with integrated insulation to create a structurally strong and thermally efficient wall assembly.
-              </p>
-            </div>
+             </p>
           </div>
 
-          <div class="faq-item">
-            <h3 class="faq-question">What types of projects are suitable for ICF construction?</h3>
-            <div class="faq-answer">
-              <p>
+          <div class="faq-card">
+             <h3 class="faq-card-title">What types of projects are suitable for ICF construction?</h3>
+             <p class="faq-card-text">
                 ICF systems are suitable for residential, commercial, institutional, and industrial buildings, including low-rise and mid-rise applications.
-              </p>
-            </div>
+             </p>
           </div>
 
-          <div class="faq-item">
-            <h3 class="faq-question">How does ICF improve energy performance?</h3>
-            <div class="faq-answer">
-              <p>
+          <div class="faq-card">
+             <h3 class="faq-card-title">How does ICF improve energy performance?</h3>
+             <p class="faq-card-text">
                 Continuous insulation and airtight construction reduce heat transfer, leading to lower cooling loads and improved indoor comfort.
-              </p>
-            </div>
+             </p>
           </div>
 
-          <div class="faq-item">
-            <h3 class="faq-question">Does G-Walls provide technical support?</h3>
-            <div class="faq-answer">
-              <p>
+          <div class="faq-card">
+             <h3 class="faq-card-title">Does G-Walls provide technical support?</h3>
+             <p class="faq-card-text">
                 Yes. G-Walls provides technical documentation and engineering support to assist designers, consultants, and contractors.
-              </p>
-            </div>
+             </p>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
-        <div class="cta-content">
-          <h2 class="cta-title">
-            Partner with Us to Deliver<br />
-            High-Performance Building Systems
-          </h2>
-          <p class="cta-subtitle">Build Something Extraordinary Together</p>
-          <button class="btn-dark">View our projects</button>
+        <div class="cta-banner">
+          <div class="cta-pattern-left"></div>
+          <div class="cta-pattern-right"></div>
+          
+          <div class="cta-content">
+            <h2 class="cta-title">
+              Partner with Us to Deliver<br />High-Performance Building Systems
+            </h2>
+            <button class="btn-dark-solid">View our projects</button>
+          </div>
         </div>
       </div>
     </section>
@@ -462,17 +507,17 @@
     <footer class="footer" id="contact">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-column">
+          <div class="footer-brand">
             <div class="footer-logo">
-              <span class="logo-icon">🔶</span>
               <span class="logo-text">G-WALLS</span>
+              <span class="logo-subtitle">G-wall Walls System</span>
             </div>
-            <p class="footer-address">
-              📍 123 Main Street<br />
-              Doha, Qatar
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Twitter">𝕏</a>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Enter Your Email" />
+              <button class="newsletter-btn" aria-label="Telegram">
+    <i class="fa-brands fa-telegram"></i>
+</button>
+
             </div>
           </div>
 
@@ -482,6 +527,8 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#projects">Properties</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faq">FAQ's</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
 
@@ -517,21 +564,17 @@
             <ul>
               <li><a href="#contact">Contact Form</a></li>
               <li><a href="#contact">Our Offices</a></li>
-              <li><a href="#faq">FAQ's</a></li>
             </ul>
-            <div class="newsletter">
-              <input type="email" placeholder="Enter Your Email" />
-            </div>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p>@2024 Pinnacle. All Rights Reserved.</p>
+          <p>©2026 Pinnacle. All Rights Reserved.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Twitter">𝕏</a>
             <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="YouTube">▶</a>
           </div>
         </div>
       </div>

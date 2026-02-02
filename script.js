@@ -208,17 +208,17 @@ window.addEventListener("scroll", () => {
 });
 
 // ===========================
-// Parallax Effect for Hero
+// Parallax Effect for Hero - DISABLED (User wants static image)
 // ===========================
-const heroImage = document.querySelector(".hero-image");
+// const heroImage = document.querySelector(".hero-image");
 
-window.addEventListener("scroll", () => {
-  if (heroImage) {
-    const scrolled = window.pageYOffset;
-    const parallax = scrolled * 0.3;
-    heroImage.style.transform = `translateY(${parallax}px)`;
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (heroImage) {
+//     const scrolled = window.pageYOffset;
+//     const parallax = scrolled * 0.3;
+//     heroImage.style.transform = `translateY(${parallax}px)`;
+//   }
+// });
 
 // ===========================
 // Counter Animation for Rating
