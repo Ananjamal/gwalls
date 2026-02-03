@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation -->
@@ -24,8 +25,7 @@
       <div class="container">
         <div class="nav-content">
           <div class="logo">
-            <span class="logo-icon">🔶</span>
-            <span class="logo-text">G-WALLS</span>
+            <img src="./images/logo.png" alt="GWALLS Logo" />
           </div>
           <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
@@ -35,7 +35,7 @@
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact us</a></li>
           </ul>
-          <button class="btn-primary">Contact us</button>
+          <button class="btn-primary-nav">Contact us</button>
           <button class="mobile-menu-toggle">
             <span></span>
             <span></span>
@@ -89,14 +89,18 @@
           <button class="btn-dark">Explore Applications</button>
           <div class="rating-container">
             <div class="avatar-group">
-              <img src="./images/avatar1.jpg" alt="User" />
-              <img src="./images/avatar2.jpg" alt="User" />
-              <img src="./images/avatar3.jpg" alt="User" />
-              <img src="./images/avatar4.jpg" alt="User" />
+              <img src="./images/person1.jpg" alt="User" />
+              <img src="./images/person2.jpg" alt="User" />
+              <img src="./images/person3.jpg" alt="User" />
+              <img src="./images/person4.jpg" alt="User" />
             </div>
             <div class="rating-info">
               <div class="stars">
-                <span>⭐⭐⭐⭐⭐</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
               </div>
               <div class="rating-text-group">
                 <span class="rating-score">4.3/5</span>
@@ -129,7 +133,7 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="./images/project1.jpg" alt="Place Vendome" />
+              <img src="./images/card image.jpg" alt="Place Vendome" />
             </div>
             <div class="project-info">
               <h3>Place Vendome</h3>
@@ -140,7 +144,7 @@
               </p>
               <div class="project-meta">
                 <div class="meta-row">
-                  <span class="location-icon">📍</span>
+                  <i class="fa-solid fa-location-dot"></i>
                   <span class="location">Doha, Qatar</span>
                 </div>
                 <span class="tag-dark">EIFS</span>
@@ -151,7 +155,7 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="./images/project2.jpg" alt="Hofuf Complex" />
+              <img src="./images/card2 image.jpg" alt="Hofuf Complex" />
             </div>
             <div class="project-info">
               <h3>Hofuf Complex</h3>
@@ -161,7 +165,7 @@
               </p>
               <div class="project-meta">
                 <div class="meta-row">
-                  <span class="location-icon">📍</span>
+                  <i class="fa-solid fa-location-dot"></i>
                   <span class="location">Al Hassa, Saudi Arabia</span>
                 </div>
                 <span class="tag-dark">ICF Systems</span>
@@ -172,7 +176,7 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="./images/project3.jpg" alt="JAFZA Warehouse" />
+              <img src="./images/card3 image.jpg" alt="JAFZA Warehouse" />
             </div>
             <div class="project-info">
               <h3>JAFZA Warehouse</h3>
@@ -183,7 +187,7 @@
               </p>
               <div class="project-meta">
                 <div class="meta-row">
-                  <span class="location-icon">📍</span>
+                  <i class="fa-solid fa-location-dot"></i>
                   <span class="location">Dubai, UAE</span>
                 </div>
                 <span class="tag-dark">iForm ICF systems</span>
@@ -207,17 +211,17 @@
     <section class="services-section" id="services">
       <div class="container">
         <div class="section-header-center">
-          <h2 class="section-title-main">Integrated Solutions You Can Rely On <span class="orange-icon">✱</span></h2>
+          <h2 class="section-title-main">Integrated Solutions You Can Rely On <span class="orange-icon"><i class="fa-solid fa-asterisk"></i></span></h2>
           <p class="section-subtitle">
             At Pinnacle, we offer a wide range of services to cater to your unique needs. From residential construction to commercial development, we've got you covered.
           </p>
         </div>
 
         <div class="services-tabs">
-          <button class="tab-btn" data-tab="top">Top</button>
+          <button class="tab-btn active" data-tab="top">Top</button>
           <button class="tab-btn" data-tab="commercial">Commercial</button>
           <button class="tab-btn" data-tab="industrial">Industrial</button>
-          <button class="tab-btn active" data-tab="residential">Residential</button>
+          <button class="tab-btn" data-tab="residential">Residential</button>
         </div>
 
         <div class="services-content">
@@ -225,7 +229,7 @@
             <div class="service-card active" data-service="residential">
               <div class="service-image">
                 <img
-                  src="./images/residential.jpg"
+                  src="./images/service image.png"
                   alt="Residential Construction"
                 />
               </div>
@@ -244,7 +248,7 @@
             <div class="service-card" data-service="commercial">
               <div class="service-image">
                 <img
-                  src="./images/commercial.jpg"
+                  src="./images/service image.png"
                   alt="Commercial & Institutional"
                 />
               </div>
@@ -263,7 +267,7 @@
             <div class="service-card" data-service="industrial">
               <div class="service-image">
                 <img
-                  src="./images/industrial.jpg"
+                  src="./images/service image.png"
                   alt="Industrial Applications"
                 />
               </div>
@@ -298,14 +302,18 @@
           
           <div class="rating-container-center">
             <div class="avatar-group">
-              <img src="./images/avatar1.jpg" alt="User" />
-              <img src="./images/avatar2.jpg" alt="User" />
-              <img src="./images/avatar3.jpg" alt="User" />
-              <img src="./images/avatar4.jpg" alt="User" />
+              <img src="./images/person1.jpg" alt="User" />
+              <img src="./images/person2.jpg" alt="User" />
+              <img src="./images/person3.jpg" alt="User" />
+              <img src="./images/person4.jpg" alt="User" />
             </div>
              <div class="rating-info">
               <div class="stars">
-                <span>⭐⭐⭐⭐⭐</span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
               <div class="rating-text-group">
                 <span class="rating-score">4.3/5</span>
@@ -318,7 +326,7 @@
         <div class="testimonials-grid">
           <div class="testimonial-card">
              <div class="testimonial-image-col">
-                 <img src="./images/avatar1.jpg" alt="John Smith" />
+                 <img src="./images/client1.jpg" alt="John Smith" />
              </div>
              <div class="testimonial-content-col">
                 <p class="testimonial-quote">
@@ -333,7 +341,7 @@
 
           <div class="testimonial-card">
             <div class="testimonial-image-col">
-                <img src="./images/avatar2.jpg" alt="Michael Chen" />
+                <img src="./images/client2.jpg" alt="Michael Chen" />
             </div>
             <div class="testimonial-content-col">
                <p class="testimonial-quote">
@@ -348,7 +356,7 @@
 
           <div class="testimonial-card">
             <div class="testimonial-image-col">
-                <img src="./images/avatar3.jpg" alt="Ahmed Al-Rashid" />
+                <img src="./images/client3.jpg" alt="Ahmed Al-Rashid" />
             </div>
             <div class="testimonial-content-col">
                <p class="testimonial-quote">
@@ -363,7 +371,7 @@
 
           <div class="testimonial-card">
             <div class="testimonial-image-col">
-                <img src="./images/avatar4.jpg" alt="Sarah K. Johnson" />
+                <img src="./images/client4.jpg" alt="Sarah K. Johnson" />
             </div>
             <div class="testimonial-content-col">
                <p class="testimonial-quote">
@@ -401,7 +409,7 @@
         <div class="blog-grid">
           <div class="blog-card">
             <div class="blog-image">
-              <img src="./images/blog1.jpg" alt="Blog Post" />
+              <img src="./images/service image.png" alt="Blog Post" />
             </div>
             <div class="blog-content">
               <span class="tag-dark">Home Improvement</span>
@@ -416,7 +424,7 @@
 
           <div class="blog-card">
             <div class="blog-image">
-              <img src="./images/blog2.jpg" alt="Blog Post" />
+              <img src="./images/service image.png" alt="Blog Post" />
             </div>
             <div class="blog-content">
               <span class="tag-dark">Planning</span>
@@ -509,15 +517,14 @@
         <div class="footer-content">
           <div class="footer-brand">
             <div class="footer-logo">
-              <span class="logo-text">G-WALLS</span>
-              <span class="logo-subtitle">G-wall Walls System</span>
+              <img src="./images/logo_footer.png" alt="GWALLS Logo" style="height: 35.5px; width: 140px; object-fit: contain;" />
             </div>
             <div class="footer-newsletter">
+              <i class="fa-regular fa-envelope newsletter-icon-left"></i>
               <input type="email" placeholder="Enter Your Email" />
-              <button class="newsletter-btn" aria-label="Telegram">
-    <i class="fa-brands fa-telegram"></i>
-</button>
-
+              <button class="newsletter-btn" aria-label="Submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </div>
           </div>
 
@@ -567,14 +574,16 @@
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-          <p>©2026 Pinnacle. All Rights Reserved.</p>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+          <p>©2024 Pinnacle. All Rights Reserved.</p>
           <div class="footer-social">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Twitter">𝕏</a>
-            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
